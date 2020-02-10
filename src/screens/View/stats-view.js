@@ -9,7 +9,6 @@ export default class StatsView extends AbstractView {
     this.model = model;
   }
   get template() {
-    debugger;
     const statsHtml = ({answers, bonuses, regularPoints, totalResult: {success, score}}, index) => {
       return `
       <table class="result__table">

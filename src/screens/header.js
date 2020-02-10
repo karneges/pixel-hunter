@@ -1,4 +1,8 @@
 
+import './../../img/heart__empty.svg'
+import './../../img/heart__full.svg'
+import './../../img/arrow_left.svg'
+import './../../img/logo_small.svg'
 
 let header = (state) => {
   const timeHtml = () => {
@@ -20,7 +24,7 @@ let header = (state) => {
 
   let el = `
     <div class="header__back">
-    ${timeHtml(state)}
+
   <button class="back">
     <img src="img/arrow_left.svg" width="45" height="45" alt="Back">
     <img src="img/logo_small.svg" width="101" height="44">
@@ -28,6 +32,7 @@ let header = (state) => {
     </div>
 
     ${livesHtml(state)}
+    ${timeHtml(state)}
     </header>`;
 
   return el;
